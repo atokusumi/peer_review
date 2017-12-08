@@ -2,7 +2,7 @@ import sys, pygame, random, os, PIL
 
 assert sys.version_info >= (3,4), 'This script requires at least Python 3.4'
 
-
+#tried to play the game but somehow it didn't read the files so I have pretty much no clue of what os going on. 
 pygame.init()
 pygame
 
@@ -85,7 +85,7 @@ def draw_puzzle(puzzle):
 		puzzle[i].draw_square(pygame.draw,screen)
 	pygame.display.flip()
 
-
+#I like how there's different colors used
 colors = [(0,206,209),(0,255,255),(127,255,212),(0,255,127),(124,252,0),(255,255,0),(255,165,0),(255,0,0),(160,32,240),(218,112,214),(255,105,180),(255,215,0),(240,230,140),(50,205,50),(205,92,92)]
 puzzle = []
 count = 0
@@ -131,3 +131,5 @@ while not winning:
 				for e in puzzle:
 					e.visible = True
 print('You finished in ' + str(moves) + ' moves.')
+#like the ending.
+#
